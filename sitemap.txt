@@ -1,0 +1,8 @@
+http://www.example.com/index.html
+
+http://www.simpleserver.com/contactus.html
+
+http://www.siimpleserver.com/family.html
+
+http://www.simpleserver.com/weddings.html
+http://www.simpleserver.com/seniors.html
