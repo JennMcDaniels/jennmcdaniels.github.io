@@ -1,6 +1,6 @@
 /*	Author: Jennifer McDaniels
 	File: Stylesheet-2.css
-	Date:  April 22, 2024
+	Date:  April 28, 2024
 */
 
 <style>
@@ -102,16 +102,15 @@ header img {
 }
 
 
-
 /* for Safari browser. Position is for all other browsers hEIGHT: 190PX  before failure */
-/* header {
-	position: -webkit-stickey;
-	position: stickey; 
+header {
+	position: -webkit-sticky;
+	position: sticky; 
 	top: 0;
- 	height: 90px; 
+ 	height: 115px; 
 	background-color: rosybrown; 
 	opacity: 0.3;
-} */
+}
 
 /* position logo, will be center for mobile, L for others */
 header img {
