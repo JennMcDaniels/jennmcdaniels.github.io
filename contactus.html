@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Name:  Jennifer McDaniels
+Filename:  ContactUs.html
+Date:  April 27, 2024 -->
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Jennifer McDaniels">
+	<meta name="description" content="Captured Moments Photography is committed to making your family session a fun one."> 
+	<meta name="keywords" content="wedding photographer, senior photographer, family photographer, affordable photographer">
+
+	<link rel="stylesheet" href="stylesheet-2.css">
+	
+	<!-- (JM) insert business name-->
+	<title><h1>Captured Moments Photography</h1></title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+	
+	<link rel="icon" href="images/favicon_32.png">   
+	<link rel="apple-touch-icon" href="images/favicon_180.png">   
+	<link rel="icon" href="images/favicon_192.png"> 
+
+</head>
+
+<body>
+	<!-- (JM) Skip to Content Link -->
+	<a class="skip" href="#content">Skip to Content</a>
+
+	<div id="container">
+	
+		<header>
+			<!-- (JM) logo and main header -->
+			<div id="logo">
+				<a href="index.html"><img src="images/cmplogo_crop_350.jpg" alt="Captured Moments Photography Logo"></a>
+			</div>
+			
+			<!-- (JM) Photography business name -->
+			<h1>Captured Moments Photography</h1>
+		</header>
+
+		<!-- (JM) Mobile Nav -->
+		<nav class="mobile-nav">
+			<div id="menu-links" class="mobile">
+				<a href="index.html">Home</a>
+				<a href="family.html">Family</a> 
+				<a href="weddings.html">Weddings</a>
+				<a href="seniors.html">Seniors</a>
+				<a href="contactus.html">Contact Us</a>
+			</div>
+		  
+		 <!-- (JM) toggle menu on and off -->
+		 <a class="menu-icon" onclick="hamburger()"> 
+			<div>&#9776;</div>
+		 </a>
+		 </nav>
+
+		<!-- (JM) Tablet, Desktop Nav -->
+		<nav class="tablet-desktop">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="family.html">Family</a></li>
+				<li><a href="weddings.html">Weddings</a></li>
+				<li><a href="seniors.html">Seniors</a></li>
+				<li><a href="contactus.html">Contact Us</a></li>
+			</ul>
+		</nav>
+
+	<!-- (JM) main page contact information -->
+	<main id="content">	
+		<div id="BusinessContactInfo">
+				<!--(JM) This header will tell user what type of session or page they're on-->
+			<h2>Ready to Schedule? Contact Us today!</h2>
+
+			<!-- (JM) Promo heading element -->
+			<h3 class="offer" onclick="discount()" id="special">View Promo Code</h3>
+			<!--(JM) leave out for now <label for="promo">Promo Code:</label> -->
+			<!-- <input type="text" id="promo" name="promo"> -->
+
+				
+			<!-- (JM) page image-->
+			<img src="images/pexels-phone.jpg" alt="image of cell phone" class="round">
+
+			<!-- (JM) Business hours -->
+			<h3>Hours</h3>
+			<ul class="hours">
+				<li>Monday through Thursday: 9:00am - 7:00pm</li>
+				<li>Friday through Sunday: 	 9:00am - 11:00pm</li>
+			</ul>
+					
+
+			<!-- (JM) business contact information -->
+			<br>
+			<div id="contactdetails">
+		
+				<!-- (JM) tel-link for mobile -->
+				<h4 class="mobile tel-link"><a href="tel:3038881234">303-888-1234</a></h4>
+
+				<!-- (JM) phone number for tablet-desktop only -->
+				<div class="tablet-desktop">
+					<h2>Call us today at:</h2>
+					<h2 class="tel-num">(303) 888-1234</h2>
+				</div>
+				
+				<div class="email">
+				<p>Email: <a href="mailto:capturedmoments@gmail.com">capturedmoments@gmail.com</a></p>
+					
+				<p>Visit us at: 136th Avenue & Zuni Street, Westminster, CO 80234</p>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3058.921086863707!2d-105.01831522359026!3d39.943154784326055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876c7571770bb399%3A0x1a3e5ff5fc408cad!2sZuni%20St%20%26%20W%20136th%20Ave%2C%20Broomfield%2C%20CO%2080023!5e0!3m2!1sen!2sus!4v1707000277311!5m2!1sen!2sus" width="300" height="250" title="map" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class=map></iframe>
+				</div>
+			</div>
+		</div>
+
+		<div id="form">
+			<!--(JM) insert user input form-->
+			<h3>Complete the form below to schedule your session!</h3>
+				
+			<!-- (JM) User input form starts here-->
+			<div class="grid">
+			<form class="form-grid" action="action_form.php" method="get"> 
+
+			<fieldset> 
+			<legend>Customer Information</legend>
+			<label for="fName">First Name:</label>
+			<input id="fName" name="fName" autofocus>
+				
+			<label for="lName">Last Name:</label>
+			<input id="lName" name="lName">
+			
+			<!-- email input -->
+			<label for="email">Email:</label>
+			<input type="email" name="email" id="email" required>
+
+			<!-- Phone input -->
+			<label for="phone">Phone:</label>
+			<input type="tel" name="phone" id="phone" required>
+			
+			<!-- Review input-->
+			<label for="review">We'd love your feedback! <br> Write a review below:</label>
+			<textarea id="review" name="review" rows=6 cols=120></textarea>
+			</fieldset>
+			
+			</form> 
+			</div>
+			
+			<!-- (JM) Referral selection for interactivity -->
+			<fieldset class="referral"> 
+				<legend>Referral Source</legend>
+				<label for="reference">How did you find us?</label>
+				
+				<select name="reference" id="reference">
+					<option value="Ad">Advertisement</option>
+					<option value="Yelp">Yelp</option>
+					<option value="Google">Google</option>
+					<option value="Social">Social Media</option>
+					<option value="Other">Other</option>
+					<option value="Friend">Friend</option>
+				</select>
+			</fieldset>
+				
+			<!-- (JM) Submit and Reset buttons for the form -->	
+			<div class="button-container">
+				<!-- submit button for input form--> 
+			<!-- (JM) leave out for now. <input type="submit" id="submit" value="Submit" class="btn"> -->
+			<button type="submit" id="submit" value="Submit" class="btn">Submit</button>
+			<!-- (JM) <input type="reset" value="Reset" class="btn"> -->
+			<button type="reset" id="reset" value="Reset"  class="btn">Reset</button>
+			</div>
+
+		</div>	
+
+	</main>
+		<hr>
+			<!-- (JM) footer elements. Don't forget to change the year ! -->
+			<footer>
+				<p>Email us at: <a href="mailto:capturedmoments@gmail.com">capturedmoments@gmail.com</a></p>
+				<p>&copy; Copyright 2024. All Rights Reserved.</p>
+			</footer>
+	
+	<!-- (JM) social media icons -->	
+	<div class="social">
+		<a href="https://facebook.com/savvyclickphotography/" target="blank"><img src="images/facebook_logo_20.png" alt="Facebook logo with white letter F on blue"></a>
+		<a href="https://twitter.com/savvy_click" target="blank"><img src="images/xlogo-black_20.png" alt="Twitter logo, also known as a black X"></a>
+		<a href="https://instagram.com/savvy_click_photography" target="blank"><img src="images/instagram_20.png" alt="red and white Instagram logo"></a>
+		<a href="https://www.pinterest.com/savvyclickphoto/" target="blank"><img src="images/pinterest_20.jpg" alt="Pinterest logo as red circle with white P"></a>
+		<a href="https://www.pinterest.com/savvyclickphoto/" target="blank"><img src="images/pinterest-followon_75.jpg" alt="follow on Pinterest in white letters on black background"></a>
+	</div>		
+		
+	</div>
+	
+	<script src="script.js"></script>
+	
+</body>
+</html>
