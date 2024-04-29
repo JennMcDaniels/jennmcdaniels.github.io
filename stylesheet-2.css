@@ -1151,7 +1151,8 @@ section p {
 .paraeng {
 	margin: 2.75%;
 	float: left;
-	padding: 1.5%;
+	padding: 1.25%;
+	padding-right: 1%;
 }
 
 /* style rule for the wedding images position */
